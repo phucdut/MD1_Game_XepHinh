@@ -55,7 +55,9 @@ class brick{
         });
         return brickCanFall;
     }
+
     fall() {
+        console.log("=====");
         if (this.canFall()) {// cho khối gạch rơi đến hàng cuối cùng
             this.row++;
             this.dots.forEach((dot) => {// vòng lặp dùng để khiếng cho từng dots trong khối gạch cùng rơi xuống

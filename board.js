@@ -56,13 +56,13 @@ class board{
                 clearInterval(this.game.status);
                 let display = document.getElementById('display').innerHTML = 'Bạn đã kết thúc trò chơi';
             }
-            if(this.coutSpeed  == 15){// điều chỉnh tốc độ cho game, nếu ăn đc 15 hàng thì tăng 1 level và tăng tốc độ rơi của khối gạch
+            if(this.coutSpeed  == 10){// điều chỉnh tốc độ cho game, nếu ăn đc 15 hàng thì tăng 1 level và tăng tốc độ rơi của khối gạch
                 this.game.speed -= 100;
                 this.coutSpeed  = 0;
                 clearInterval(this.game.status);
                 this.game.status = this.game.startGame();
             }
-            document.getElementById('txt_level').value = Math.floor((1000-this.game.speed)/100);//
+            document.getElementById('txt_level').value = Math.floor((500-this.game.speed)/100);
             document.getElementById('txt_score').value = this.number;
         }
     }

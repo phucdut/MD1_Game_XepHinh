@@ -7,7 +7,7 @@ class game{
         this.context = null;
         this.btnStart = null;
         this.status = null;
-        this.speed = 1000;
+        this.speed = 500;
         this.init();
     }
     init(){
